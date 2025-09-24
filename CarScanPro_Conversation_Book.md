@@ -1,0 +1,61 @@
+# CarScan Pro — Conversation Archive (Book Edition)
+**Creator:** Justin Tafua  
+**Compiled:** Full history and assets consolidated into one document  
+**Project:** CarScan Pro (DIY auto scan + repair helper, Next.js PWA)
+
+---
+
+## Table of Contents
+1. Vision & First Request
+2. Key Features We Built
+3. Monetization Plan
+4. Branding & Logo System
+5. GitHub + Vercel (Deploy Guide)
+6. Ownership & IP Protection
+7. Files & Repo Structure
+8. Procedural Logo Generator (Code)
+9. Next Steps & Long-Term Roadmap
+
+---
+
+## 1) Vision & First Request
+- *Original ask:* “Can you launch an app I made on v0 and make it better and virtual?”
+- Direction: rebuild as a **Next.js PWA**, polish UI, add camera + AI demo, onboarding, splash, free vs pro, Stripe, AdSense, affiliate links, legal pages, feedback page, and Vercel deployment.
+
+---
+
+## 2) Key Features We Built
+- **Next.js PWA**: installable, fast, mobile-friendly.
+- **Animated splash + onboarding**: logo color cycle, welcome steps.
+- **AI scanning demo**: TensorFlow.js (MobileNet) via device camera.
+- **Free vs Pro gating**:
+  - Free: 3 scans/day + ads.
+  - Pro: unlimited scans, ad-free, offline-ready.
+- **Stripe subscription** (serverless API route).
+- **AdSense slot component** (plug your publisher + slot IDs).
+- **Affiliate link system** (Amazon, RockAuto, AutoZone) via `src/config/affiliates.json`.
+- **Legal pages**: Terms of Service, Privacy Policy.
+- **Feedback page**: collects suggestions/bug reports.
+- **Vercel config** for one-click deployment.
+
+---
+
+## 3) Monetization Plan (3 streams)
+1. **Subscriptions (Stripe)** — recurring revenue for Pro features.
+2. **Ads (AdSense)** — monetize Free users.
+3. **Affiliate links** — earn on parts/tools purchases.
+
+---
+
+## 4) Branding & Logo System
+- Core mark: **1992 Nissan Skyline R32 GTST (4-door), widebody, R32 GTR front bumper**, forward-facing, magnifying-glass “O” in **Pro**.
+- **Living Logo System**:
+  - 25 curated, static variations (for merch).
+  - Infinite procedural generator (colorways, rims, shop scenes, build states: jack stands, engine hoist, hood-off, bumper-off, primer-to-paint, etc.).
+  - **Hidden micro-watermark:** “Justin Tafua” for ownership proof.
+- Goal: a brand that feels alive (new variant each app open), while curated pack supports hats/tees/stickers/posters.
+
+---
+
+## 5) GitHub + Vercel (Deploy Guide)
+**Repo structure**
