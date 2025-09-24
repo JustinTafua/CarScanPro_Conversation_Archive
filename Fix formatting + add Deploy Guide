@@ -58,4 +58,42 @@
 ---
 
 ## 5) GitHub + Vercel (Deploy Guide)
-**Repo structure**
+**Repo structure**```
+public/
+  manifest.json
+  icons/ (app icons, PWA metadata)
+src/
+  components/
+    Navbar.jsx
+    Footer.jsx
+    AdSlot.jsx
+    Paywall.jsx
+    ResultCard.jsx
+    Onboarding.jsx
+  config/
+    affiliates.json
+  pages/
+    _document.js
+    index.js
+    scan.js
+    pricing.js
+    feedback.js
+    privacy.js
+    terms.js
+next.config.js
+package.json
+README.md
+LICENSE
+```
+
+**Deployment Steps**
+1. Push repo to GitHub (main branch).
+2. Go to [Vercel](https://vercel.com).
+3. Import your GitHub repo → choose framework “Next.js”.
+4. Add Environment Variables:
+   - `STRIPE_SECRET_KEY`
+   - `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY`
+   - `STRIPE_PRICE_ID`
+   - `NEXT_PUBLIC_BASE_URL`
+5. Deploy → verify splash, onboarding, camera scan, Free/Pro split.
+6. Test Pro checkout in Stripe test mode.
